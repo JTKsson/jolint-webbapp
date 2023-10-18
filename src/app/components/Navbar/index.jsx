@@ -43,7 +43,6 @@ const Navbar = () => {
                             <ul>
                                 <li><a href="#" onClick={() => handleLanguageChange('English')}>English</a></li>
                                 <li><a href="#" onClick={() => handleLanguageChange('Swedish')}>Swedish</a></li>
-                                <li><a href="#" onClick={() => handleLanguageChange('Spanish')}>Spanish</a></li>
                             </ul>
                         )}
                     </li>
