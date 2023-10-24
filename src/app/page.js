@@ -1,9 +1,11 @@
-import Faq from "../app/faq/page"
+import HeroComponent from "./components/HeroComponent"
+import Advantages from "./components/Advantages"
 
 export default function Home() {
   return (
     <>
-     <Faq/>
+      <HeroComponent/>
+      <Advantages/>
     </>
   )
 }
