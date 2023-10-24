@@ -1,0 +1,17 @@
+
+.contentBox {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contentCard {
+  display: flex;
+  flex-direction: column;
+}
