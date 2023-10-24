@@ -1,4 +1,4 @@
-import { InclusionStatsContent } from '@/assets/inclutionStatsContent'
+import { InclusionStatsContent } from '@/app/assets/inclutionStatsContent'
 import Styles from './inclusionStats.module.css'
 
 const InclusionStats = () => {
