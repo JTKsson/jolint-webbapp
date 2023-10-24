@@ -1,4 +1,4 @@
-import { HeroContent } from './heroContent'
+import { HeroContent } from '../../assets/heroContent'
 import Image from 'next/image'
 import Styles from './hero.module.css'
 import HeroImage from 'public/heroimage.png'
