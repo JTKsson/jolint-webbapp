@@ -1,8 +1,9 @@
+import Faq from "../app/faq/page"
 
 export default function Home() {
   return (
     <>
-      <div>Hello</div>
+     <Faq/>
     </>
   )
 }
