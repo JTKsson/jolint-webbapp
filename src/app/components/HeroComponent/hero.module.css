@@ -1,0 +1,44 @@
+.button {
+  border-radius: 25px;
+  height: auto;
+  margin-right: var(--padding-s);
+  padding: var(--padding-s);
+  width: 70px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--padding-base);
+}
+
+.content {
+  font-size: 24px;
+  margin-top: var(--padding-base);
+}
+
+.contentCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.image {
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 40%;
+  transform: translate(0, -50%);
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xl) var(--padding-2xl);
+  position: relative;
+}
+
+.title {
+  font-size: 48px;
+}

@@ -1,0 +1,12 @@
+.advantages {
+  text-align: center;
+}
+
+.contentBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contentCard {
+  background-color: bisque;
+}

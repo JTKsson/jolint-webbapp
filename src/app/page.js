@@ -1,3 +1,11 @@
+import HeroComponent from "./components/HeroComponent"
+import Advantages from "./components/Advantages"
+
 export default function Home() {
-  return <></>
+  return (
+    <>
+      <HeroComponent/>
+      <Advantages/>
+    </>
+  )
 }
