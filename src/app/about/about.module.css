@@ -1,0 +1,36 @@
+.h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62.4px;
+}
+.co_founder {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.co_founder-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.co_founder-info {
+  flex-grow: 1;
+}
+
+.co_founder h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.co_founder p {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
