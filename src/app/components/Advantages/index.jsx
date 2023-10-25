@@ -1,4 +1,4 @@
-import { AdvantagesContent } from '@/assets/advantages-content'
+import { AdvantagesContent } from '../../assets/advantages-content'
 import Styles from './advantages.module.css'
 
 const Advantages = () => {

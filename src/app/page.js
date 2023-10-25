@@ -7,5 +7,10 @@ export default function Home() {
       <HeroComponent/>
       <Advantages/>
     </>
+<<<<<<< HEAD
   );
 };
+=======
+  )
+}
+>>>>>>> feature/p-157-globalcss-variables
