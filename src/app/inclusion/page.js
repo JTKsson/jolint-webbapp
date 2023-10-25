@@ -1,8 +1,18 @@
+import React from 'react'
+import inclusionContent from '../assets/inclusion-content'
+;('../assets/inclusion-content')
 
-const inclusionPage = () => {
+const InclusionPage = () => {
   return (
-    <h2>Inclusion page</h2>
+    <div>
+      {inclusionContent.map((inclusionItem, index) => (
+        <div key={index}>
+          <h3>{inclusionItem.title}</h3>
+          <p>{inclusionItem.content}</p>
+        </div>
+      ))}
+    </div>
   )
 }
 
-export default inclusionPage
+export default InclusionPage
