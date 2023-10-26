@@ -1,19 +1,21 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import Styles from "./navbar.module.css"
 
 const Navbar = () => {
   return (
-    <nav className="">
-      <Link href="#" target="_blank">
+    <nav className={Styles.Navbar}>
+      <Link className={Styles.logo} href="#" target="_blank">
         <Image
+          
           src="/JOLINT-logo.svg"
           width={120}
           height={35.518}
           alt="Jolint logo"
         />
       </Link>
-      <div className="navbar">
+      <div className={Styles.navbarButton}>
         <ul>
           <li>
             <a href="#">How it works</a>
@@ -27,14 +29,9 @@ const Navbar = () => {
           <li>
             <a href="#">About Us</a>
           </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li className="consent Button">
-            <a href="#">consent form</a>
-          </li>
         </ul>
       </div>
+      <a href="#"><button className={Styles.consentButton}>Consent form</button></a>
     </nav>
   )
 }

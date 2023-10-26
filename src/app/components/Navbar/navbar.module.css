@@ -1,0 +1,49 @@
+
+
+.Navbar {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 4% 2%;
+    border-bottom: 1px solid black
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navbarButton{
+    font-size: var(--font-h2);
+    list-style: none;
+}
+
+.navbarButton li{
+    display: inline-block;
+    padding: 12px 42px;
+}
+
+.navbarButton li a{
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+.navbarButton li a:hover{
+    color: var(--c-orange)
+}
+
+.consentButton{
+    margin-left: 20px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-color: var(--c-orange);
+    color: white;
+    font-size: var(--font-h2);
+}
+
+
+
