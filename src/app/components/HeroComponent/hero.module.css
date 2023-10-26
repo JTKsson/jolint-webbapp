@@ -1,18 +1,25 @@
 .button {
+  border: 3px solid;
   border-radius: 10px;
   font-family: var(--font-h2);
   font-size: 20px;
   font-weight: 600;
   height: fit-content;
   margin-right: var(--padding-s);
+  margin-top: var(--padding-s);
   padding: var(--padding-s) var(--padding-base);
   width: fit-content;
 }
 
+.button:hover {
+  filter: brightness(0.9);
+}
+
 .buttons {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: var(--padding-base);
+  width: 500px;
 }
 
 .content {
@@ -25,6 +32,7 @@
   display: flex;
   flex-direction: column;
   max-width: 60%;
+  justify-content: space-between;
 }
 
 .image {
@@ -38,7 +46,7 @@
 }
 
 .mainBox {
-  /* align-items: center; */
+  align-content: center;
   background: linear-gradient(
     130deg,
     rgba(229, 32, 50, 1) 0%,
@@ -50,13 +58,31 @@
   );
   display: flex;
   flex-direction: row;
-  justify-content: center;
   padding: var(--padding-4xl) var(--padding-2xl);
 }
 
 .title {
   font-family: var(--font-h1);
   font-size: 48px;
+  font-weight: 700;
+}
+
+.inclusion {
+  background-color: #ffffffb8;
+  border-color: var(--c-btn-blue);
+  color: var(--c-text-dark);
+}
+
+.howItWorks {
+  background-color: var(--c-btn-blue);
+  border-color: var(--c-btn-blue);
+  color: var(--c-text-light);
+}
+
+.consentForm {
+  background-color: var(--c-btn-orange);
+  border-color: var(--c-btn-orange);
+  color: var(--c-text-light);
 }
 
 @media only screen and (max-width: 768px) {
@@ -72,6 +98,7 @@
     font-size: 18px;
   }
   .contentBox {
+    align-items: center;
     flex-direction: column;
     max-width: 100%;
   }
