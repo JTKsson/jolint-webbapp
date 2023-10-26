@@ -11,7 +11,7 @@
 
 .buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   margin-top: var(--padding-base);
 }
 
@@ -38,7 +38,7 @@
 }
 
 .mainBox {
-  align-items: center;
+  /* align-items: center; */
   background: linear-gradient(
     130deg,
     rgba(229, 32, 50, 1) 0%,
@@ -49,11 +49,45 @@
     rgba(151, 184, 215, 1) 100%
   );
   display: flex;
-  flex-direction: row;justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding: var(--padding-4xl) var(--padding-2xl);
 }
 
 .title {
   font-family: var(--font-h1);
   font-size: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    font-size: 12px;
+  }
+
+  .buttons {
+    justify-content: space-around;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+  .contentBox {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .imageContainer {
+    margin-top: var(--padding-base);
+    width: 80%;
+  }
+
+  .mainBox {
+    align-items: center;
+    flex-direction: column;
+    padding: var(--padding-base);
+  }
+
+  .title {
+    font-size: 32px;
+  }
 }
