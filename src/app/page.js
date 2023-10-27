@@ -5,7 +5,6 @@ import HowItWorks from "./components/HowItWorks"
 import { HowItWorksContent } from "./components/HowItWorks/HowItWorksContent"
 import Navbar from "./components/Navbar"
 import InclusionStats from "./components/InclusionStats"
-import InclusionDropdownComponent from './components/InclusionDropdownComponent'
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
       <InclusionPage />
       <Advantages/>
       <InclusionStats/>
-      <InclusionDropdownComponent />
       <HowItWorks data={HowItWorksContent}/>
     </>
   );
