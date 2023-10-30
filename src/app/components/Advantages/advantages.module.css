@@ -4,9 +4,44 @@
 
 .contentBox {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  padding: var(--padding-base);
 }
 
 .contentCard {
-  background-color: bisque;
+  color: var(--c-text-light);
+  background-color: var(--c-blue-dark);
+  border-radius: 10px;
+  flex: 1;
+  font-family: var(--font-h2);
+  font-size: 24px;
+  height: auto;
+  margin: 0 var(--padding-base);
+  padding: var(--padding-4xl) var(--padding-2xl);
+  width: 30%;
+}
+
+.title {
+  font-family: var(--font-h1);
+  font-size: 40px;
+  font-weight: 700;
+  padding: var(--padding-large);
+}
+
+@media only screen and (max-width: 768px) {
+  .contentBox {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contentCard {
+    width: 80%;
+    margin-bottom: var(--padding-base);
+  }
+
+  .title {
+    font-size: 32px;
+  }
 }
