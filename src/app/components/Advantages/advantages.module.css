@@ -17,7 +17,7 @@
   font-family: var(--font-h2);
   font-size: 24px;
   height: auto;
-  margin: 0 var(--padding-base);
+  margin: 0 var(--padding-s);
   padding: var(--padding-4xl) var(--padding-2xl);
   width: 30%;
 }
