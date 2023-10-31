@@ -1,0 +1,120 @@
+.button {
+  border: 3px solid;
+  border-radius: 10px;
+  font-family: var(--font-h2);
+  font-size: 20px;
+  font-weight: 600;
+  height: fit-content;
+  margin-right: var(--padding-s);
+  margin-top: var(--padding-s);
+  padding: var(--padding-s) var(--padding-base);
+  width: fit-content;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--padding-base);
+  width: 500px;
+}
+
+.content {
+  font-family: var(--font-h2);
+  font-size: 24px;
+  margin-top: var(--padding-base);
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  justify-content: space-between;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+}
+
+.imageContainer {
+  width: 40%;
+  position: relative;
+}
+
+.mainBox {
+  align-content: center;
+  background: linear-gradient(
+    130deg,
+    rgba(229, 32, 50, 1) 0%,
+    rgba(250, 187, 132, 1) 15%,
+    rgba(255, 230, 208, 1) 32%,
+    rgba(255, 255, 255, 1) 43%,
+    rgba(255, 255, 255, 1) 72%,
+    rgba(151, 184, 215, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xl) var(--padding-2xl);
+}
+
+.title {
+  font-family: var(--font-h1);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.inclusion {
+  background-color: #ffffffb8;
+  border-color: var(--c-btn-blue);
+  color: var(--c-text-dark);
+}
+
+.howItWorks {
+  background-color: var(--c-btn-blue);
+  border-color: var(--c-btn-blue);
+  color: var(--c-text-light);
+}
+
+.consentForm {
+  background-color: var(--c-btn-orange);
+  border-color: var(--c-btn-orange);
+  color: var(--c-text-light);
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    font-size: 12px;
+  }
+
+  .buttons {
+    justify-content: space-around;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+  .contentBox {
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .imageContainer {
+    margin-top: var(--padding-base);
+    width: 80%;
+  }
+
+  .mainBox {
+    align-items: center;
+    flex-direction: column;
+    padding: var(--padding-base);
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
