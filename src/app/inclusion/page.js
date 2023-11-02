@@ -14,4 +14,4 @@ const InclusionPage = () => {
   )
 }
 
-export default InclusionPage;
+export default InclusionPage
