@@ -8,9 +8,9 @@ const FaqPage = () => {
 
   const toggleAnswer = (index) => {
     if (expandedIndex === index) {
-      setExpandedIndex(null) // If clicked on the expanded item, collapse it
+      setExpandedIndex(null)
     } else {
-      setExpandedIndex(index) // Otherwise, expand the clicked item
+      setExpandedIndex(index)
     }
   }
 
@@ -23,8 +23,17 @@ const FaqPage = () => {
             key={index}
             onClick={() => toggleAnswer(index)}
           >
-            <h3>Q: {faqItem.Q}</h3>
-            {expandedIndex === index && <p>A: {faqItem.A}</p>}
+            <h3>
+              {faqItem.Q}
+              <span
+                className={
+                  expandedIndex === index
+                    ? style.arrowIcon + ' ' + style.rotateArrow
+                    : style.arrowIcon
+                }
+              ></span>
+            </h3>
+            {expandedIndex === index && <p>{faqItem.A}</p>}
           </div>
         ))}
       </div>
