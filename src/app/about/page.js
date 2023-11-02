@@ -1,11 +1,12 @@
 import React from 'react'
+import Styles from "./about.module.css"
 
 function About() {
   return (
-    <div>
-      <h1>About us</h1>
-      <h2>Our mission</h2>
-      <p>
+    <div className={Styles.aboutBody}>
+      <h1 className={Styles.title}>About us</h1>
+      <h2 className={Styles.subTitle}>Our mission</h2>
+      <p className={Styles.content}>
         At Jolint, we are driven by a passion for improving workplaces and
         creating a better world for everyone. We make sure to keep ethics and
         privacy at the forefront when gathering data. Throughout our journey,
@@ -16,7 +17,7 @@ function About() {
         technologies, and a team of experts, we are committed to creating a more
         inclusive and equitable work culture for all.
       </p>
-      <h2>Co-founders:</h2>
+      <h2  className={Styles.subTitle}>Co-founders:</h2>
       <div>
         <img src="/Klaudia.jpg" alt="Klaudia Mur" />
         <h3>Klaudia Mur</h3>
