@@ -1,41 +1,45 @@
-
-
 .Navbar {
-    display:flex;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 4% 2%;
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
 }
 
-.logo{
+.logo {
     cursor: pointer;
-    margin-right: auto;
 }
 
-.navbarButton{
+.navbarButton {
     font-size: var(--font-h2);
     list-style: none;
 }
 
-.navbarButton li{
-    display: inline-block;
-    padding: 12px 42px;
+.navbarButton ul {
+    display: flex;
+    list-style: none;
 }
 
-.navbarButton li a{
+.navbarButton li {
+    margin: 0 40px;
+}
+
+.navbarButton li:last-child {
+    margin-right: 0;
+}
+
+.navbarButton li a {
     text-decoration: none;
     transition: all 0.3s ease 0s;
     color: black;
 }
 
-.navbarButton li a:hover{
-    color: var(--c-orange)
+.navbarButton li a:hover {
+    color: var(--c-orange);
 }
 
-.consentButton{
-    margin-left: 20px;
-    padding: 14px 25px;
+.consentButton {
+    padding: 10px 20px;
     border: none;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
@@ -45,5 +49,23 @@
     font-size: var(--font-h2);
 }
 
+@media screen and (max-width: 700px) {
+.Navbar {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .navbarButton {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .navbarButton li {
+        padding: 10px 0;
+        margin: auto 10px;
+    }
+
+    .consentButton {
+        margin: 20px 0;
+    }
+}
