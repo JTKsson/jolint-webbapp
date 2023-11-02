@@ -1,12 +1,21 @@
-import InclusionDropdownComponent from "../components/InclusionDropdownComponent"
 import React from 'react'
+import inclusionContent from '../assets/inclusion-content'
+;('../assets/inclusion-content')
+import InclusionDropdownComponent from "../components/InclusionDropdownComponent"
 import mentalHealth from '../assets/mental-health'
 
 const InclusionPage = () => {
   return (
     <div>
-      <h2>Inclusion page</h2>
       <InclusionDropdownComponent/>
+      <div>
+      {inclusionContent.map((inclusionItem, index) => (
+        <div key={index}>
+          <h3>{inclusionItem.title}</h3>
+          <p>{inclusionItem.content}</p>
+        </div>
+      ))}
+    </div>
       <div>
         <h3>About mental health at work</h3>
         {mentalHealth.map((item, index) => (
