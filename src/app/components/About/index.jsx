@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function About() {
   return (
@@ -18,7 +18,7 @@ function About() {
       </p>
       <h2>Co-founders:</h2>
       <div>
-      <img src="/Klaudia.jpg" alt="Klaudia Mur" />
+        <img src="/Klaudia.jpg" alt="Klaudia Mur" />
         <h3>Klaudia Mur</h3>
         <p>
           I am a data scientist and physicist. My background in Complex Adaptive
@@ -34,7 +34,7 @@ function About() {
         </p>
       </div>
       <div>
-      <img src="/Faheem.jpg" alt="Faheem Shah" />
+        <img src="/Faheem.jpg" alt="Faheem Shah" />
         <h3>Faheem Shah</h3>
         <p>
           As the co-founder of Jolint, I bring a wealth of expertise in

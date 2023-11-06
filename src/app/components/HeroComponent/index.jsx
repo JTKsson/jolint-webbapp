@@ -8,17 +8,25 @@ const HeroComponent = () => {
   return (
     <section className={Styles.mainBox}>
       <div className={Styles.contentBox}>
-        <div><h2 className={Styles.title}>{HeroContent.title}</h2>
-        <p className={Styles.content}>{HeroContent.content}</p></div>
+        <div>
+          <h2 className={Styles.title}>{HeroContent.title}</h2>
+          <p className={Styles.content}>{HeroContent.content}</p>
+        </div>
         <div className={Styles.buttons}>
           <Link href="/inclusion">
-            <button className={`${Styles.button} ${Styles.inclusion}`}>Why inclusion</button>
+            <button className={`${Styles.button} ${Styles.inclusion}`}>
+              Why inclusion
+            </button>
           </Link>
           <Link href="#">
-            <button className={`${Styles.button} ${Styles.howItWorks}`}>How it works</button>
+            <button className={`${Styles.button} ${Styles.howItWorks}`}>
+              How it works
+            </button>
           </Link>
           <Link href="https://jolint-consent-form.vercel.app/">
-            <button className={`${Styles.button} ${Styles.consentForm}`}>Consent form</button>
+            <button className={`${Styles.button} ${Styles.consentForm}`}>
+              Consent form
+            </button>
           </Link>
         </div>
       </div>

@@ -1,17 +1,16 @@
-import HeroComponent from "./components/HeroComponent"
-import InclusionPage from "./components/InclusionPageTitle"
-import Advantages from "./components/Advantages"
-import HowItWorks from "./components/HowItWorks"
-import { HowItWorksContent } from "./components/HowItWorks/HowItWorksContent"
+import HeroComponent from './components/HeroComponent'
+import InclusionPage from './components/InclusionPageTitle'
+import Advantages from './components/Advantages'
+import HowItWorks from './components/HowItWorks'
+import { HowItWorksContent } from './components/HowItWorks/HowItWorksContent'
 
 export default function Home() {
   return (
     <>
-      <HeroComponent/>
+      <HeroComponent />
       <InclusionPage />
-      <Advantages/>
-      <HowItWorks data={HowItWorksContent}/>
+      <Advantages />
+      <HowItWorks data={HowItWorksContent} />
     </>
-  );
-};
-
+  )
+}
