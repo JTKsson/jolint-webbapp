@@ -1,8 +1,8 @@
-import React from 'react';
-import inclusionContent from '../assets/inclusion-content';
-import InclusionDropdownComponent from '../components/InclusionDropdownComponent';
-import mentalHealth from '../assets/mental-health';
-import inclusionDiversity from '../assets/inclusion-diversity';
+import React from 'react'
+import inclusionContent from '../assets/inclusion-content'
+import InclusionDropdownComponent from '../components/InclusionDropdownComponent'
+import mentalHealth from '../assets/mental-health'
+import inclusionDiversity from '../assets/inclusion-diversity'
 
 const InclusionPage = () => {
   return (
@@ -32,8 +32,7 @@ const InclusionPage = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default InclusionPage;
-
+export default InclusionPage
