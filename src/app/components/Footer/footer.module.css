@@ -5,6 +5,7 @@
   height: 100%;
   padding: var(--padding-base);
   width: 100%;
+  font-family: var(--font-h2);
 }
 
 .footerComponent {

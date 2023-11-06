@@ -1,5 +1,8 @@
 import './globals.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import { Inter } from 'next/font/google'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -7,7 +10,6 @@ export const metadata = {
   title: 'Jolint | Info',
   description: 'Employee info page for getting to know Jolint',
 }
-import Navbar from './components/Navbar'
 
 export default function RootLayout({ children }) {
   return (
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar/>
         {children}
+        <Footer />
       </body>
     </html>
   )
