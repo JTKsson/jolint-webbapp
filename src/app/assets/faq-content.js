@@ -17,7 +17,7 @@ const faqContent = [
     },
     {
       Q:'How can inclusion help me at my workplace?',
-      A:'A: Research shows that diverse companies are more innovative and productive. A wide range of perspectives leads to a larger pool of knowledge and experiences to choose from, resulting in better decision making and problem solving.'
+      A:'Research shows that diverse companies are more innovative and productive. A wide range of perspectives leads to a larger pool of knowledge and experiences to choose from, resulting in better decision making and problem solving.'
     },
     {
       Q:'How long will you save my data?',
