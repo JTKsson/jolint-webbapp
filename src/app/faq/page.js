@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import faqContent from '../assets/faq-content'
 import style from './faq.module.css'
