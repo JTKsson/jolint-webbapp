@@ -9,4 +9,19 @@
 
 .contentCard {
   background-color: bisque;
+  width: 30%;
+}
+
+.onClickEffect {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hoverEffect {
+    display: none;
+  }
+
+  .onClickEffect {
+    display: flex;
+  }
 }
