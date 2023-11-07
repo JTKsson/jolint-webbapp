@@ -9,19 +9,21 @@
 }
 
 .contentBox {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: var(--padding-4xl);
+  width: 100%;
 }
 
 .contentCard {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: var(--padding-xl);
   margin: var(--padding-base) 0;
+  padding: var(--padding-xl);
 }
 
 .image {
@@ -34,19 +36,60 @@
   font-weight: 700;
 }
 
-.textContent {
+.contentText {
   font-family: var(--font-h2);
   font-size: 16px;
 }
 
-.eclipse {
+.eclipseDesktop {
   background-color: var(--c-blue);
-  color: var(--c-text-light);
-  width: 20px;
-  height: 20px;
   border-radius: 50%;
+  color: var(--c-text-light);
   font-family: var(--font-h2);
+  height: 20px;
+  padding: var(--padding-s);
   text-align: center;
   text-justify: center;
+  width: 20px;
+}
+
+.eclipseMobile {
+  background-color: var(--c-blue);
+  border-radius: 50%;
+  color: var(--c-text-light);
+  display: none;
+  font-family: var(--font-h2);
+  height: 20px;
   padding: var(--padding-s);
+  text-align: center;
+  text-justify: center;
+  width: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentCard {
+    border-radius: 10px;
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+  }
+
+  .eclipseDesktop {
+    display: none;
+  }
+
+  .eclipseMobile {
+    display: none;
+    margin-top: var(--padding-large);
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  .cardContent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
 }

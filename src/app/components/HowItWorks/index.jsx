@@ -8,11 +8,14 @@ const HowItWorks = ({ data }) => {
       {data.map((item, index) => (
         <section className={Styles.contentCard} key={index}>
           <img className={Styles.image} src={item.image} />
-          <div className={Styles.eclipse}></div>
+          <div className={Styles.eclipseDesktop}></div>
           <div className={Styles.cardContent}>
             <h2 className={Styles.cardTitle}>{item.title}</h2>
-            <p className={Styles.textContent}>{item.content}</p>
+            <p className={Styles.contentText}>{item.content}</p>
           </div>
+          {index >= 0 && index <= 3 && (
+            <div className={Styles.eclipseMobile}></div>
+          )}{' '}
         </section>
       ))}
     </div>
