@@ -34,19 +34,19 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <a href="#">How it works</a>
+            <a href="#HowItWorks">How it works</a>
           </li>
           <li>
-            <a href="#">Inclusion</a>
+            <a href="https://jolint-webbapp.vercel.app/inclusion"> why Inclusion</a>
           </li>
           <li>
-            <a href="#">Faq</a>
+            <a href="https://jolint-webbapp.vercel.app/faq">Faq</a>
           </li>
           <li>
-            <a href="#">About Us</a>
+            <a href="https://jolint-webbapp.vercel.app/about">About Us</a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://jolint-consent-form.vercel.app/">
               <button className={Styles.consentButton}>Consent form</button>
             </a>
           </li>
