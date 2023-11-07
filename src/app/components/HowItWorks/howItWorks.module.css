@@ -1,0 +1,52 @@
+.cardContent {
+  width: 45%;
+}
+
+.cardTitle {
+  font-family: var(--font-h2);
+  font-size: 24px;
+  margin-bottom: var(--padding-s);
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-4xl);
+}
+
+.contentCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-xl);
+  margin: var(--padding-base) 0;
+}
+
+.image {
+  width: 40%;
+}
+
+.mainTitle {
+  font-family: var(--font-h1);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.textContent {
+  font-family: var(--font-h2);
+  font-size: 16px;
+}
+
+.eclipse {
+  background-color: var(--c-blue);
+  color: var(--c-text-light);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-family: var(--font-h2);
+  text-align: center;
+  text-justify: center;
+  padding: var(--padding-s);
+}
