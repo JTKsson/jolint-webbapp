@@ -1,0 +1,42 @@
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contentCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-base);
+}
+
+.inclusionStats {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-4xl) var(--padding-base);
+  text-align: center;
+}
+
+.number {
+  color: var(--c-blue);
+  font-family: var(--font-h1);
+  font-size: 36px;
+  padding: var(--padding-base);
+}
+
+.subTitle {
+  font-family: var(--font-h2);
+  font-size: 24px;
+}
+
+.statName {
+  font-family: var(--font-h2);
+  font-size: 24px;
+}
+
+.title {
+  font-family: var(--font-h1);
+  font-size: 34px;
+  font-weight: 700;
+}
