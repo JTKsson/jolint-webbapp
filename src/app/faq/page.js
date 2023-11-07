@@ -1,5 +1,5 @@
-import React from 'react';
-import faqContent from '../assets/faq-content'; 
+import React from 'react'
+import faqContent from '../assets/faq-content'
 
 const faqPage = () => {
   return (
@@ -11,7 +11,7 @@ const faqPage = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default faqPage;
+export default faqPage

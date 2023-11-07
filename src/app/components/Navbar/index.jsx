@@ -1,15 +1,15 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Styles from "./navbar.module.css"
+import Styles from './navbar.module.css'
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    setIsMenuOpen(!isMenuOpen)
+  }
   return (
     <nav className={Styles.Navbar}>
       <div className={Styles.logoContainer}>
@@ -19,7 +19,7 @@ const Navbar = () => {
             width={120}
             height={35.518}
             alt="Jolint logo"
-            />
+          />
         </Link>
       </div>
 
@@ -29,7 +29,9 @@ const Navbar = () => {
         <div className={Styles.bar}></div>
       </button>
 
-      <div className={`${Styles.navbarButton} ${isMenuOpen ? Styles.open : ''}`}>
+      <div
+        className={`${Styles.navbarButton} ${isMenuOpen ? Styles.open : ''}`}
+      >
         <ul>
           <li>
             <a href="#">How it works</a>
@@ -43,8 +45,10 @@ const Navbar = () => {
           <li>
             <a href="#">About Us</a>
           </li>
-          <li>    
-            <a href="#"><button className={Styles.consentButton}>Consent form</button></a>
+          <li>
+            <a href="#">
+              <button className={Styles.consentButton}>Consent form</button>
+            </a>
           </li>
         </ul>
       </div>
