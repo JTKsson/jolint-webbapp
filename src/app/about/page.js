@@ -30,7 +30,7 @@ function About() {
         <h2 className={Styles.subTitle}>Co-founders:</h2>
         <div className={Styles.founderBox}>
           <div className={Styles.founder}>
-              <Image className={Styles.image} src={Klaudia} alt="Klaudia Mur" />
+            <Image className={Styles.image} src={Klaudia} alt="Klaudia Mur" />
             <div className={Styles.founderContent}>
               <h3 className={Styles.founderName}>Klaudia Mur</h3>
               <p className={Styles.content}>
@@ -48,7 +48,7 @@ function About() {
             </div>
           </div>
           <div className={Styles.founder}>
-              <Image className={Styles.image} src={Faheem} alt="Faheem Shah" />
+            <Image className={Styles.image} src={Faheem} alt="Faheem Shah" />
             <div className={Styles.founderContent}>
               <h3 className={Styles.founderName}>Faheem Shah</h3>
               <p className={Styles.content}>
