@@ -1,19 +1,42 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import faqContent from '../assets/faq-content'
+import style from './faq.module.css'
 
-const faqPage = () => {
+const FaqPage = () => {
+  const [expandedIndex, setExpandedIndex] = useState(null)
+
+  const toggleAnswer = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index)
+  }
+
   return (
-    <div>
+    <div className={style.faqPage}>
       <h1>FAQ</h1>
       <p>Learn more about Jolint and our work method</p>
-      {faqContent.map((faqPage, index) => (
-        <div key={index}>
-          <h3>{faqPage.Q}</h3>
-          <p>{faqPage.A}</p>
-        </div>
-      ))}
+      <div className={style.questionsFlexContainer}>
+        {faqContent.map((faqItem, index) => (
+          <div
+            className={style.questionContainer}
+            key={index}
+            onClick={() => toggleAnswer(index)}
+          >
+            <h3>
+              {faqItem.Q}
+              <span
+                className={
+                  expandedIndex === index
+                    ? `${style.arrowIcon} ${style.rotateArrow}`
+                    : style.arrowIcon
+                }
+              />
+            </h3>
+            {expandedIndex === index && <p>{faqItem.A}</p>}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
 
-export default faqPage
+export default FaqPage

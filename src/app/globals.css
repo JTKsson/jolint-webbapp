@@ -26,6 +26,10 @@
   --c-grey-light: #ededed;
   --c-orange: #f4770a;
   --c-red: #ea4554;
+  --c-red-light: #ed636f;
+  --c-orange-light: #eb954a;
+
+
   --c-violet: #9aa4ff;
 
   --c-btn-blue: var(--c-blue);

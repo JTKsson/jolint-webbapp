@@ -22,12 +22,15 @@ const Advantages = () => {
 
   return (
     <div className={Styles.advantages}>
-      <h2>Advantages with Jolint at your workplace</h2>
+      <h2 className={Styles.title}>Advantages with Jolint at your workplace</h2>
       <div className={`${Styles.contentBox} ${Styles.hoverEffect}`}>
         {AdvantagesContent.map((item, index) => (
           <div
             className={Styles.contentCard}
             key={index}
+            style={{
+              backgroundColor: index === hoveredIndex ? item.bgColor : ' ',
+            }}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
@@ -41,6 +44,11 @@ const Advantages = () => {
           <div
             className={Styles.contentCard}
             key={index}
+            style={{
+              backgroundColor: index === clickedIndex ? item.bgColor : ' ',
+              color: index === clickedIndex ? 'var(--c-text-dark)' : ' ',
+              fontSize: index === clickedIndex ? '20px' : ' ',
+            }}
             onClick={() => handleItemClick(index)}
           >
             {clickedIndex === index ? item.hoverContent : item.content}
