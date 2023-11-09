@@ -16,6 +16,8 @@ const FaqPage = () => {
 
   return (
     <div className={style.faqPage}>
+      <h1 className={style.h1}></h1>
+      <p className={style.p}></p>
       <div className={style.questionsFlexContainer}>
         {faqContent.map((faqItem, index) => (
           <div
