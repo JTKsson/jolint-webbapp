@@ -5,9 +5,9 @@
     rgba(255, 255, 255, 0) 118.87%
   );
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
@@ -26,6 +26,7 @@
 }
 
 .questionContainer {
+  align-self: flex-start;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.85);
   width: 100%;
@@ -58,11 +59,11 @@
 }
 
 .answerContainer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  padding-top: 20px;
+  transition: padding-top 0.3s e;
 }
 
 .expanded {
   max-height: fit-content;
+  padding-top: 20px;
 }
