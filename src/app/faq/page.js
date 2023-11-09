@@ -31,7 +31,11 @@ const FaqPage = () => {
                 }
               />
             </h3>
-            {expandedIndex === index && <p>{faqItem.A}</p>}
+            {expandedIndex === index && (
+              <div className={style.answerContainer}>
+                <p>{faqItem.A}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
