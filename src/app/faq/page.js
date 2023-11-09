@@ -12,8 +12,8 @@ const FaqPage = () => {
 
   return (
     <div className={style.faqPage}>
-      <h1>FAQ</h1>
-      <p>Learn more about Jolint and our work method</p>
+      <h1 className={style.h1}>FAQ</h1>
+      <p className={style.p}>Learn more about Jolint and our work method</p>
       <div className={style.questionsFlexContainer}>
         {faqContent.map((faqItem, index) => (
           <div
