@@ -1,6 +1,6 @@
 'use client'
 import CountUp from 'react-countup'
-import Styles from "./inclusionPageTitle.module.css"
+import Styles from './inclusionPageTitle.module.css'
 
 const InclusionPage = () => {
   return (

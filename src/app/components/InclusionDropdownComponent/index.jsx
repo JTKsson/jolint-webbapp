@@ -14,53 +14,53 @@ const ContentCard = ({ title, imageSrc, content }) => {
       <div className="cardHeader" onClick={handleCardClick}>
         <Image src={imageSrc} width={278} height={219} alt="" />
         <h2>{title}</h2>
-        {content}
       </div>
       {expand && <div className="cardExtended">{content}</div>}
     </div>
   )
 }
 
-const InclusionDropdownComponent = () => {
+const InclusionDropdownComponent = ({
+  inclusionContent,
+  inclusionDiversity,
+  mentalHealth,
+}) => {
   return (
     <>
       <h2>About inclusion at workplace</h2>
       <div className="container1">
-        <ContentCard
-          imageSrc="/bild1.png"
-        />
-        <ContentCard
-          imageSrc="/bild2.png"
-        />
-        <ContentCard
-          imageSrc="/bild3.png"
-        />
+        {inclusionContent.map((item, index) => (
+          <ContentCard
+            key={`inclusion-${index}`}
+            title={item.title}
+            content={item.content}
+            imageSrc={item.imageSrc}
+          />
+        ))}
       </div>
 
       <h2>About diversity in organizations</h2>
       <div className="container2">
-        <ContentCard
-          imageSrc="/bild4.png"
-        />
-        <ContentCard
-          imageSrc="/bild5.png"
-        />
-        <ContentCard
-          imageSrc="/bild6.png"
-        />
+        {inclusionDiversity.map((item, index) => (
+          <ContentCard
+            key={`diversity-${index}`}
+            title={item.title}
+            content={item.content}
+            imageSrc={item.imageSrc}
+          />
+        ))}
       </div>
 
       <h2>About mental health at work</h2>
       <div className="container3">
-        <ContentCard
-          imageSrc="/bild7.png"
+        {mentalHealth.map((item, index) => (
+          <ContentCard
+            key={`mental-health-${index}`}
+            title={item.title}
+            content={item.content}
+            imageSrc={item.imageSrc}
           />
-        <ContentCard
-          imageSrc="/bild8.png"
-        />
-        <ContentCard
-          imageSrc="/bild9.png"
-        />
+        ))}
       </div>
     </>
   )
