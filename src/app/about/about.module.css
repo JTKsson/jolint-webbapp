@@ -63,7 +63,6 @@
   font-size: 34px;
   font-weight: 700;
   margin-top: calc(var(--padding-xl) * 2);
-
 }
 
 .title {
@@ -76,6 +75,4 @@
   .founder {
     align-items: normal;
   }
-
-
 }

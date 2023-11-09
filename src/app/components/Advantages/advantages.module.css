@@ -47,7 +47,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
   .advantages {
     display: flex;
     flex-direction: column;
@@ -84,7 +83,3 @@
     display: flex;
   }
 }
-
-
-
-
