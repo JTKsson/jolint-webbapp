@@ -1,12 +1,18 @@
-import InclusionDropdownComponent from "../components/InclusionDropdownComponent"
+import React from 'react'
+import inclusionContent from '../assets/inclusion-content'
+import inclusionDiversity from '../assets/inclusion-diversity'
+import mentalHealth from '../assets/mental-health'
+import InclusionDropdownComponent from '../components/InclusionDropdownComponent'
 
-const inclusionPage = () => {
+const InclusionPage = () => {
   return (
     <>
-    <h2>Inclusion page</h2>
-    <InclusionDropdownComponent/>
+      <InclusionDropdownComponent
+        inclusionContent={inclusionContent}
+        inclusionDiversity={inclusionDiversity}
+        mentalHealth={mentalHealth}
+      />
     </>
   )
 }
-
-export default inclusionPage
+export default InclusionPage

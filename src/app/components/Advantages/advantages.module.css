@@ -4,9 +4,82 @@
 
 .contentBox {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  padding: var(--padding-base);
 }
 
 .contentCard {
-  background-color: bisque;
+  color: var(--c-text-light);
+  background-color: var(--c-blue-dark);
+  border-radius: 10px;
+  display: flex;
+  flex: 1;
+  font-family: var(--font-h2);
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  margin: 0 var(--padding-s);
+  padding: var(--padding-2xl) var(--padding-xl);
+  width: 30%;
+}
+
+.contentCard:hover {
+  color: var(--c-text-dark);
+  font-size: 20px;
+  transform: 0.3s;
+}
+
+.conentCard:hover {
+  height: 400px;
+}
+
+.title {
+  font-family: var(--font-h1);
+  font-size: 40px;
+  font-weight: 700;
+  padding: var(--padding-large);
+}
+
+.onClickEffect {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .contentBox {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contentCard {
+    width: 80%;
+    margin-bottom: var(--padding-base);
+  }
+
+  .contentCard:hover {
+    font-size: 24px;
+    color: var(--c-text-light);
+  }
+
+  .title {
+    align-self: center;
+    font-size: 32px;
+    width: 80%;
+  }
+
+  .hoverEffect {
+    display: none;
+  }
+
+  .onClickEffect {
+    display: flex;
+  }
 }

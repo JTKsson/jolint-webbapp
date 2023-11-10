@@ -1,0 +1,95 @@
+.cardContent {
+  width: 45%;
+}
+
+.cardTitle {
+  font-family: var(--font-h2);
+  font-size: 24px;
+  margin-bottom: var(--padding-s);
+}
+
+.contentBox {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-4xl);
+  width: 100%;
+}
+
+.contentCard {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: var(--padding-base) 0;
+  padding: var(--padding-xl);
+}
+
+.image {
+  width: 40%;
+}
+
+.mainTitle {
+  font-family: var(--font-h1);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contentText {
+  font-family: var(--font-h2);
+  font-size: 16px;
+}
+
+.eclipseDesktop {
+  background-color: var(--c-blue);
+  border-radius: 50%;
+  color: var(--c-text-light);
+  font-family: var(--font-h2);
+  height: 20px;
+  padding: var(--padding-s);
+  text-align: center;
+  text-justify: center;
+  width: 20px;
+}
+
+.eclipseMobile {
+  background-color: var(--c-blue);
+  border-radius: 50%;
+  color: var(--c-text-light);
+  display: none;
+  font-family: var(--font-h2);
+  height: 20px;
+  padding: var(--padding-s);
+  text-align: center;
+  text-justify: center;
+  width: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentCard {
+    border-radius: 10px;
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+  }
+
+  .eclipseDesktop {
+    display: none;
+  }
+
+  .eclipseMobile {
+    display: none;
+    margin-top: var(--padding-large);
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  .cardContent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
