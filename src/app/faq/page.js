@@ -25,8 +25,8 @@ const FaqPage = () => {
             key={index}
             onClick={() => toggleAnswer(index)}
           >
-            <h3>
-              {faqItem.Q}
+            <div className={style.questionHeader}>
+              <h3>{faqItem.Q}</h3>
               <span
                 className={
                   expandedIndex === index
@@ -34,7 +34,7 @@ const FaqPage = () => {
                     : style.arrowIcon
                 }
               ></span>
-            </h3>
+            </div>
             {expandedIndex === index && (
               <div className={style.answerContainer}>
                 <p>{faqItem.A}</p>
