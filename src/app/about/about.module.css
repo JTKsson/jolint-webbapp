@@ -48,8 +48,9 @@
 }
 
 .image {
-  width: auto;
+  width: 40%;
   height: auto;
+  padding: var(--padding-base);
 }
 
 .imageContainer {
@@ -73,6 +74,7 @@
 
 @media only screen and (max-width: 768px) {
   .founder {
+    flex-direction: column;
     align-items: normal;
   }
 }
