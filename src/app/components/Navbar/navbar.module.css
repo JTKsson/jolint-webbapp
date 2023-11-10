@@ -1,0 +1,117 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4% 2%;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+}
+
+.logoContainer {
+    cursor: pointer;
+}
+
+.hamburgerButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.navbarButton {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-h2);
+    font-size: var(--font-size-base);
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: end;
+}
+
+.navbarButton ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbarButton li {
+    display: inline-block;
+    padding: 12px 15px;
+}
+
+.navbarButton li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+.navbarButton li a:hover {
+    color: var(--c-orange);
+}
+
+.consentButton {
+    /* margin-left: 20px; */
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-color: var(--c-orange);
+    color: white;
+    font-size: var(--font-h2);
+}
+
+@media screen and (max-width: 768px) { 
+  .hamburgerButton {
+    display: block;
+   }
+
+  .navbarButton {
+    display: none;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 0;
+  }
+
+  .navbarButton.open {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .navbarButton.open ul li a {
+    color: black;
+  }
+
+  .navbarButton ul {  
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbarButton ul li {
+    padding: 12px 0;
+    text-align: center;
+    color: white;
+  }
+    
+  .navbarButton ul li a {
+    color: rgb(255, 255, 255);
+  }
+    
+  .navbarButton ul li a:hover {
+    color: var(--c-orange);
+  }
+
+}
