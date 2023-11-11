@@ -7,13 +7,17 @@ const FaqPage = () => {
   const [expandedIndex, setExpandedIndex] = useState(null)
 
   const toggleAnswer = (index) => {
-    setExpandedIndex(expandedIndex === index ? null : index)
+    if (expandedIndex === index) {
+      setExpandedIndex(null)
+    } else {
+      setExpandedIndex(index)
+    }
   }
 
   return (
     <div className={style.faqPage}>
-      <h1>FAQ</h1>
-      <p>Learn more about Jolint and our work method</p>
+      <h1 className={style.h1}></h1>
+      <p className={style.p}></p>
       <div className={style.questionsFlexContainer}>
         {faqContent.map((faqItem, index) => (
           <div
@@ -21,17 +25,21 @@ const FaqPage = () => {
             key={index}
             onClick={() => toggleAnswer(index)}
           >
-            <h3>
-              {faqItem.Q}
+            <div className={style.questionHeader}>
+              <h3>{faqItem.Q}</h3>
               <span
                 className={
                   expandedIndex === index
-                    ? `${style.arrowIcon} ${style.rotateArrow}`
+                    ? style.arrowIcon + ' ' + style.rotateArrow
                     : style.arrowIcon
                 }
-              />
-            </h3>
-            {expandedIndex === index && <p>{faqItem.A}</p>}
+              ></span>
+            </div>
+            {expandedIndex === index && (
+              <div className={style.answerContainer}>
+                <p>{faqItem.A}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
