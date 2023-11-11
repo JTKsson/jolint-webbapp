@@ -7,7 +7,11 @@ const FaqPage = () => {
   const [expandedIndex, setExpandedIndex] = useState(null)
 
   const toggleAnswer = (index) => {
-    setExpandedIndex(expandedIndex === index ? null : index)
+    if (expandedIndex === index) {
+      setExpandedIndex(null)
+    } else {
+      setExpandedIndex(index)
+    }
   }
 
   return (
@@ -21,16 +25,16 @@ const FaqPage = () => {
             key={index}
             onClick={() => toggleAnswer(index)}
           >
-            <h3>
-              {faqItem.Q}
+            <div className={style.questionHeader}>
+              <h3>{faqItem.Q}</h3>
               <span
                 className={
                   expandedIndex === index
-                    ? `${style.arrowIcon} ${style.rotateArrow}`
+                    ? style.arrowIcon + ' ' + style.rotateArrow
                     : style.arrowIcon
                 }
-              />
-            </h3>
+              ></span>
+            </div>
             {expandedIndex === index && (
               <div className={style.answerContainer}>
                 <p>{faqItem.A}</p>

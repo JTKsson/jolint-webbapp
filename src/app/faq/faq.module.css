@@ -37,8 +37,14 @@
   margin: 10px auto;
 }
 
+.questionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
 .arrowIcon {
-  margin-left: 10px;
   border: solid black;
   border-width: 0 2px 2px 0;
   display: inline-block;
