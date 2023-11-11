@@ -59,6 +59,7 @@
   display: flex;
   flex-direction: row;
   padding: var(--padding-4xl) var(--padding-2xl);
+  width:fit-content
 }
 
 .title {
