@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
   padding: var(--padding-2xl);
+  align-items: center;
 }
 
 .bold {
@@ -17,9 +18,9 @@
   line-height: 32px;
 }
 
-.contentBox {
+/* .contentBox {
   padding: var(--padding-2xl);
-}
+} */
 
 .founder {
   display: flex;
@@ -33,6 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
 }
 
 .founderContent {
@@ -73,8 +75,20 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .aboutBody {
+    padding: var(--padding-s);
+  }
   .founder {
     flex-direction: column;
     align-items: normal;
+    margin-top: var(--padding-base);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .image {
+    width: 70%;
   }
 }
