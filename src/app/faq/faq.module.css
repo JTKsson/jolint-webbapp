@@ -12,6 +12,10 @@
   padding: var(--padding-base);
 }
 
+.heading {
+  background-color: aqua;
+}
+
 .questionsFlexContainer {
   display: flex;
   flex-wrap: wrap;
