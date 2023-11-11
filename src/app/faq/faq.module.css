@@ -135,7 +135,7 @@
   }
 
   .heading {
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
 }
 
@@ -157,10 +157,10 @@
     }
   
     .questionContainer:last-child {
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
     }
   
     .heading {
-      margin-top: 7rem;
+      margin-top: 2rem;
     }
 }
