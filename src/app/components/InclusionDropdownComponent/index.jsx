@@ -13,7 +13,7 @@ const ContentCard = ({ title, imageSrc, content }) => {
   return (
     <div className={Styles.cardContent}>
       <div className={Styles.cardHeader} onClick={handleCardClick}>
-        <Image src={imageSrc} width={278} height={219} alt="" />
+        <Image src={imageSrc} width={349} height={266} alt="" />
         <h2>{title}</h2>
       </div>
       {expand && <div className={Styles.cardExtended}>{content}</div>}
@@ -28,7 +28,7 @@ const InclusionDropdownComponent = ({
 }) => {
   return (
     <>
-      <h2>About inclusion at workplace</h2>
+      <h2 className={Styles.title2}>About inclusion at workplace</h2>
       <div className={Styles.container1}>
         {inclusionContent.map((item, index) => (
           <ContentCard
@@ -40,7 +40,7 @@ const InclusionDropdownComponent = ({
         ))}
       </div>
 
-      <h2>About diversity in organizations</h2>
+      <h2 className={Styles.title2}>About diversity in organizations</h2>
       <div className={Styles.container2}>
         {inclusionDiversity.map((item, index) => (
           <ContentCard
@@ -52,7 +52,7 @@ const InclusionDropdownComponent = ({
         ))}
       </div>
 
-      <h2>About mental health at work</h2>
+      <h2 className={Styles.title2}>About mental health at work</h2>
       <div className={Styles.container3}>
         {mentalHealth.map((item, index) => (
           <ContentCard
