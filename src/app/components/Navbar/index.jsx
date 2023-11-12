@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className={Styles.Navbar}>
       <div className={Styles.logoContainer}>
-        <Link className={Styles.logo} href="#" target="_blank">
+        <Link className={Styles.logo} href="/">
           <Image
             src="/JOLINT-logo.svg"
             width={120}
@@ -34,21 +34,21 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <a href="#HowItWorks">How it works</a>
+            <Link href="#how-it-works" passHref>How it works</Link>
           </li>
           <li>
-            <a href="https://jolint-webbapp.vercel.app/inclusion"> why Inclusion</a>
+            <Link href="/inclusion">Why Inclusion</Link>
           </li>
           <li>
-            <a href="https://jolint-webbapp.vercel.app/faq">Faq</a>
+            <Link href="/faq">Faq</Link>
           </li>
           <li>
-            <a href="https://jolint-webbapp.vercel.app/about">About Us</a>
+            <Link href="/about">About Us</Link>
           </li>
           <li>
-            <a href="https://jolint-consent-form.vercel.app/">
+            <Link href="https://jolint-consent-form.vercel.app/">
               <button className={Styles.consentButton}>Consent form</button>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

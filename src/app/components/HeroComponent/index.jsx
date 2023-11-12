@@ -18,7 +18,7 @@ const HeroComponent = () => {
               Why inclusion
             </button>
           </Link>
-          <Link href="#">
+          <Link href="#how-it-works">
             <button className={`${Styles.button} ${Styles.howItWorks}`}>
               How it works
             </button>
