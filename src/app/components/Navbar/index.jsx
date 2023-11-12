@@ -37,7 +37,10 @@ const Navbar = () => {
             <a href="#HowItWorks">How it works</a>
           </li>
           <li>
-            <a href="https://jolint-webbapp.vercel.app/inclusion"> why Inclusion</a>
+            <a href="https://jolint-webbapp.vercel.app/inclusion">
+              {' '}
+              why Inclusion
+            </a>
           </li>
           <li>
             <a href="https://jolint-webbapp.vercel.app/faq">Faq</a>
