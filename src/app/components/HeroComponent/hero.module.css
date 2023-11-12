@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: var(--padding-base);
-  width: 500px;
+  max-width: 100%; /* Changed from fixed width to max-width */
 }
 
 .content {
@@ -59,7 +59,6 @@
   display: flex;
   flex-direction: row;
   padding: var(--padding-4xl) var(--padding-2xl);
-  width: fit-content;
 }
 
 .title {
@@ -88,11 +87,11 @@
 
 @media only screen and (max-width: 768px) {
   .button {
-    font-size: 12px;
+    font-size: 16px; /* Slightly larger for better readability */
   }
 
   .buttons {
-    justify-content: space-around;
+    justify-content: center; /* Centering buttons for smaller screens */
   }
 
   .content {
@@ -106,16 +105,17 @@
 
   .imageContainer {
     margin-top: var(--padding-base);
-    width: 80%;
+    width: 100%; /* Adjusted to 100% for better fit on small screens */
   }
 
   .mainBox {
     align-items: center;
     flex-direction: column;
-    padding: var(--padding-base);
+    padding: var(--padding-m); /* Reduced padding for smaller screens */
   }
 
   .title {
-    font-size: 32px;
+    font-size: 32px; /* Adjusted for smaller screens */
   }
 }
+

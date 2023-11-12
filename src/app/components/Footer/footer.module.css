@@ -57,9 +57,6 @@
     align-items: center;
     flex-direction: column;
   }
-  .footer {
-    width: 530px;
-  }
   .icon {
     padding: var(--padding-base);
   }

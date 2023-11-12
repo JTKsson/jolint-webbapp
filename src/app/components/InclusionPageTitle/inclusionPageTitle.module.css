@@ -1,15 +1,21 @@
 .contentBox {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;  /* Enabled wrapping */
   justify-content: space-around;
+  align-items: center; 
+  gap: var(--padding-base);  /* Added space between items */
 }
+
 
 .contentCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: var(--padding-base);
+  max-width: 300px; 
 }
+
 
 .inclusionStats {
   display: flex;
