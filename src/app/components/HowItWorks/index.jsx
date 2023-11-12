@@ -1,5 +1,5 @@
-'use client';
-import Styles from './howItWorks.module.css';
+'use client'
+import Styles from './howItWorks.module.css'
 
 const HowItWorks = ({ data }) => {
   return (
@@ -23,7 +23,7 @@ const HowItWorks = ({ data }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HowItWorks;
+export default HowItWorks

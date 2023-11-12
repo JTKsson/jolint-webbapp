@@ -28,7 +28,7 @@
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 2px; /* Adjust this value to decrease the width of the timeline */
+  width: 2px;
   height: 100%;
   background-color: var(--c-blue);
   overflow: hidden;
@@ -37,7 +37,6 @@
 .timelineItem:first-child::before {
   margin: 20% 0;
 }
-
 
 .timelineItem:last-child::before {
   margin: -20% 0;
