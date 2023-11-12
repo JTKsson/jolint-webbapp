@@ -3,7 +3,7 @@ import Styles from './howItWorks.module.css'
 
 const HowItWorks = ({ data }) => {
   return (
-    <div className={Styles.contentBox}>
+    <div id="how-it-works" className={Styles.contentBox}>
       <h1 className={Styles.mainTitle}>How it works</h1>
       {data.map((item, index) => (
         <section className={Styles.contentCard} key={index}>
