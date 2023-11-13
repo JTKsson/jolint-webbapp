@@ -20,8 +20,12 @@ const ContentCard = ({ title, imageSrc, content }) => {
         <Image src={imageSrc} width={349} height={266} alt="" />
         <p className={Styles.cardTitle}>{title}</p>
       </div>
-      
-      {expand && <div className={Styles.cardExtended} onMouseLeave={handleMouseLeave}>{content}</div>}
+
+      {expand && (
+        <div className={Styles.cardExtended} onMouseLeave={handleMouseLeave}>
+          {content}
+        </div>
+      )}
     </div>
   )
 }
@@ -32,7 +36,16 @@ const InclusionDropdownComponent = ({
   mentalHealth,
 }) => {
   return (
-    <div className={Styles.inclusionBody}>  
+    <div className={Styles.inclusionBody}>
+      <div className={Styles.titleContent}>
+        <h1>Why inclusion is important</h1>
+        <p>
+          Inclusion and diversity play crucial roles in helping a workplace
+          thrive. By fostering an inclusive environment, several positive
+          outcomes can be achieved, including happiness, creativity, innovation,
+          and success. Let's explore each of these aspects.
+        </p>
+      </div>
 
       <div className={Styles.containerBox}>
         <h2 className={Styles.titleTwo}>About inclusion at workplace</h2>
@@ -46,7 +59,7 @@ const InclusionDropdownComponent = ({
             />
           ))}
         </div>
-      </div> 
+      </div>
 
       <div className={Styles.containerBox}>
         <h2 className={Styles.titleTwo}>About diversity in organizations</h2>
@@ -60,9 +73,9 @@ const InclusionDropdownComponent = ({
             />
           ))}
         </div>
-      </div> 
+      </div>
 
-      <div className={Styles.containerBox}> 
+      <div className={Styles.containerBox}>
         <h2 className={Styles.titleTwo}>About mental health at work</h2>
         <div className={Styles.cardsContainer}>
           {mentalHealth.map((item, index) => (
@@ -74,7 +87,7 @@ const InclusionDropdownComponent = ({
             />
           ))}
         </div>
-      </div> 
+      </div>
     </div>
   )
 }
