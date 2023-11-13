@@ -34,7 +34,9 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <Link href="#how-it-works" passHref>How it works</Link>
+            <Link href="/" as="/#how-it-works">
+              How it works
+            </Link>
           </li>
           <li>
             <Link href="/inclusion">Why Inclusion</Link>
@@ -46,7 +48,10 @@ const Navbar = () => {
             <Link href="/about">About Us</Link>
           </li>
           <li>
-            <Link href="https://jolint-consent-form.vercel.app/">
+            <Link
+              href="https://jolint-consent-form.vercel.app/"
+              target="_blank"
+            >
               <button className={Styles.consentButton}>Consent form</button>
             </Link>
           </li>
