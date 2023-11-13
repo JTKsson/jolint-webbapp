@@ -41,7 +41,7 @@ const Navbar = () => {
           <li>
             <a href="https://jolint-webbapp.vercel.app/inclusion">
               {' '}
-              why Inclusion
+              Why Inclusion
             </a>
           </li>
           <li>
