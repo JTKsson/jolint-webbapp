@@ -10,6 +10,8 @@ const HeroComponent = () => {
       <div className={Styles.contentBox}>
         <div>
           <h2 className={Styles.title}>{HeroContent.title}</h2>
+        </div>
+        <div>
           <p className={Styles.content}>{HeroContent.content}</p>
         </div>
         <div className={Styles.buttons}>
@@ -23,11 +25,6 @@ const HeroComponent = () => {
               How it works
             </button>
           </Link>
-          <Link href="https://jolint-consent-form.vercel.app/">
-            <button className={`${Styles.button} ${Styles.consentForm}`}>
-              Consent form
-            </button>
-          </Link>
         </div>
       </div>
 
@@ -36,6 +33,8 @@ const HeroComponent = () => {
           className={Styles.image}
           src={HeroImage}
           alt="Image of three happy women"
+          height={550}
+          width={600}
         />
       </div>
     </section>
