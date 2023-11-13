@@ -1,6 +1,6 @@
 .button {
-  border: 3px solid;
   border-radius: 10px;
+  border: 3px solid;
   font-family: var(--font-h2);
   font-size: 20px;
   font-weight: 600;
@@ -12,36 +12,36 @@
 }
 
 .button:hover {
+  cursor: pointer;
   filter: brightness(0.9);
-}
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: var(--padding-base);
-  max-width: 100%; /* Changed from fixed width to max-width */
 }
 
 .content {
   font-family: var(--font-h2);
   font-size: 24px;
-  margin-top: var(--padding-base);
+  width: 90%;
 }
 
 .contentBox {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
-  justify-content: space-between;
+  gap: 2.5rem;
+  height: 50vh;
+  justify-content: center;
+  margin: 3rem 0;
+  max-width: 50%;
 }
 
 .image {
-  height: auto;
-  width: 100%;
+  height: 105%;
+  object-fit: cover; 
+  object-position: 0 -30%;
+  position: absolute;
+  right: 0;
 }
 
 .imageContainer {
-  width: 40%;
+  width: 100%;
   position: relative;
 }
 
@@ -55,16 +55,18 @@
     rgba(255, 255, 255, 1) 43%,
     rgba(255, 255, 255, 1) 72%,
     rgba(151, 184, 215, 1) 100%
-  );
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-4xl) var(--padding-2xl);
+    );
+    display: flex;
+    flex-direction: row;
+    padding: 6rem;
+    padding-right: 0;
 }
 
 .title {
   font-family: var(--font-h1);
   font-size: 48px;
   font-weight: 700;
+  line-height: 3.5rem;
 }
 
 .inclusion {
@@ -79,42 +81,35 @@
   color: var(--c-text-light);
 }
 
-.consentForm {
-  background-color: var(--c-btn-orange);
-  border-color: var(--c-btn-orange);
-  color: var(--c-text-light);
-}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
   .button {
     font-size: 16px; /* Slightly larger for better readability */
   }
 
-  .buttons {
-    justify-content: center; /* Centering buttons for smaller screens */
-  }
-
   .content {
     font-size: 18px;
+    width: 100%;
   }
+  
   .contentBox {
-    align-items: center;
     flex-direction: column;
+    gap: 2rem;
+    height: 45vh;
+    justify-content: center;
+    margin: 5rem 2rem;
     max-width: 100%;
-  }
-
-  .imageContainer {
-    margin-top: var(--padding-base);
-    width: 100%; /* Adjusted to 100% for better fit on small screens */
   }
 
   .mainBox {
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     padding: var(--padding-m); /* Reduced padding for smaller screens */
   }
 
   .title {
     font-size: 32px; /* Adjusted for smaller screens */
+    line-height: 2.5rem;
   }
 }
