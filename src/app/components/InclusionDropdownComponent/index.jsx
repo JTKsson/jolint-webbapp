@@ -10,13 +10,18 @@ const ContentCard = ({ title, imageSrc, content }) => {
     setExpand(!expand)
   }
 
+  const handleMouseLeave = () => {
+    setExpand(!expand)
+  }
+
   return (
     <div className={Styles.cardContent}>
       <div className={Styles.cardHeader} onClick={handleCardClick}>
         <Image src={imageSrc} width={349} height={266} alt="" />
         <h2>{title}</h2>
       </div>
-      {expand && <div className={Styles.cardExtended}>{content}</div>}
+      
+      {expand && <div className={Styles.cardExtended} onMouseLeave={handleMouseLeave}>{content}</div>}
     </div>
   )
 }
