@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className={Styles.Navbar}>
       <div className={Styles.logoContainer}>
-        <Link className={Styles.logo} href="#" target="_blank">
+        <Link className={Styles.logo} href="/">
           <Image
             src="/JOLINT-logo.svg"
             width={120}
@@ -34,21 +34,30 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <a href="#HowItWorks">How it works</a>
+            <Link href="/" as="/#how-it-works">
+              How it works
+            </Link>
           </li>
           <li>
-            <a href="https://jolint-webbapp.vercel.app/inclusion"> why Inclusion</a>
-          </li>
-          <li>
-            <a href="https://jolint-webbapp.vercel.app/faq">Faq</a>
-          </li>
-          <li>
-            <a href="https://jolint-webbapp.vercel.app/about">About Us</a>
-          </li>
-          <li>
-            <a href="https://jolint-consent-form.vercel.app/">
-              <button className={Styles.consentButton}>Consent form</button>
+            <Link href="/inclusion">Why Inclusion</Link>
+            <a href="https://jolint-webbapp.vercel.app/inclusion">
+              {' '}
+              why Inclusion
             </a>
+          </li>
+          <li>
+            <Link href="/faq">Faq</Link>
+          </li>
+          <li>
+            <Link href="/about">About Us</Link>
+          </li>
+          <li>
+            <Link
+              href="https://jolint-consent-form.vercel.app/"
+              target="_blank"
+            >
+              <button className={Styles.consentButton}>Consent form</button>
+            </Link>
           </li>
         </ul>
       </div>

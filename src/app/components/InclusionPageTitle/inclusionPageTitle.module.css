@@ -1,7 +1,10 @@
 .contentBox {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* Enabled wrapping */
   justify-content: space-around;
+  align-items: center;
+  gap: var(--padding-base); /* Added space between items */
 }
 
 .contentCard {
@@ -9,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   padding: var(--padding-base);
+  max-width: 300px;
 }
 
 .inclusionStats {
@@ -39,4 +43,13 @@
   font-family: var(--font-h1);
   font-size: 34px;
   font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  .contentBox {
+    justify-content: space-between;
+  }
+
+  .contentCard {
+    max-width: 45%;
+  }
 }
